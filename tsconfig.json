@@ -4,16 +4,7 @@
     "declaration": true,
     "target": "es2015",
     "module": "es2015",
-    "lib": [
-      "dom",
-      "es5",
-      "es2015",
-      "es2016",
-      "esnext.asynciterable",
-      "dom.iterable",
-      "es2017",
-      "webworker"
-    ],
+    "lib": ["dom", "es5", "es2015", "es2016", "esnext.asynciterable"],
     "jsx": "react",
     "moduleResolution": "node",
     "noUnusedLocals": true,
