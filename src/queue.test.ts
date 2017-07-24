@@ -68,6 +68,17 @@ describe('Queue', () => {
 
     expect.assertions(6)
   })
+
+  it('shoud handle beeing emptied and filled up again', async () => {
+    const queue = new Queue()
+
+    await expect(
+      queue.add(() => timeout(10).then(() => 'first')),
+    ).resolves.toBe('first')
+    await expect(
+      queue.add(() => timeout(10).then(() => 'second')),
+    ).resolves.toBe('second')
+  })
 })
 
 describe('UniqueQueue', () => {

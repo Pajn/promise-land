@@ -47,7 +47,9 @@ export class Queue {
   private _executed() {
     this.tasks.shift()
     this.isExecuting = false
-    this._schedule()
+    if (this.tasks.length > 0) {
+      this._schedule()
+    }
   }
 
   private _schedule() {
