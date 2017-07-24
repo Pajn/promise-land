@@ -1,5 +1,5 @@
-import {Queue, UniqueQueue, NotUniqueError, Order} from './queue'
 import {timeout} from './index'
+import {NotUniqueError, Order, Queue, UniqueQueue} from './queue'
 
 describe('Queue', () => {
   it('shoud execute jobs in order', async () => {
