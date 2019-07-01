@@ -12,7 +12,7 @@
     "@types/jest": "^20.0.4",
     "coveralls": "^2.13.1",
     "prettier": "^1.5.3",
-    "tscomp": "0.13.2",
+    "tscomp": "0.15.3",
     "tslint": "^5.5.0",
     "tslint-config-pajn": "^1.0.0"
   },
